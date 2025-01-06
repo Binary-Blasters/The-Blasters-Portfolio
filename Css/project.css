@@ -8,6 +8,9 @@ body{
 section{
     padding-left: 25px;
 }
+.main{
+    padding-left: 25px;
+}
 #heading{
     font-size: 25px;
 }
@@ -15,12 +18,10 @@ section{
     font-weight: bold;
 }
 .overview{
-    
     border-radius: 10px;
-    width: 400px;
+    width: 450px;
     padding-left: 15px;
     background-color: #1a1a1a;
-    transition: transform 0.3s ease-in-out;
 }
 .overview h3{
     text-align: center;
