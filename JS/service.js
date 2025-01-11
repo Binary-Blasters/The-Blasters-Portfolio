@@ -1,10 +1,10 @@
-// Fetch services data
+// Fetching data from service.json
 fetch('../Json/Service.json')
   .then((response) => response.json())
   .then((services) => {
     const container = document.getElementById('services-container');
 
-    // Loop through each service and generate cards dynamically
+   
     services.forEach((service, index) => {
       const serviceCard = document.createElement('div');
       serviceCard.className = 'service-card';
@@ -22,14 +22,14 @@ fetch('../Json/Service.json')
       container.appendChild(serviceCard);
     });
 
-    // Add event listeners to "Learn More" buttons
+   
     const learnMoreButtons = document.querySelectorAll('.learn-more-btn');
     learnMoreButtons.forEach((button) => {
       button.addEventListener('click', (event) => {
         const index = event.target.getAttribute('data-index');
         const details = document.getElementById(`details-${index}`);
         
-        // Toggle visibility of details
+      
         if (details.style.display === 'none') {
           details.style.display = 'block';
           button.textContent = 'Show Less';
