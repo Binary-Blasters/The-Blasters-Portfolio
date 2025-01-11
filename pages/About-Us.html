@@ -5,7 +5,7 @@
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <title></title>
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
  <style>
 
    body {
@@ -46,7 +46,7 @@
             color: #ddd;
            
            }
- .btn{
+ .btnS{
             background-color:#1a1a1a;
             ;
             border-radius:20px;
@@ -55,7 +55,7 @@
            
      }
 
- .btn:hover{
+ .btnS:hover{
              box-shadow: 3px 5px 6px white;
              transition transform: 0.3s ease-in-out;
              background-color: #ff5722;
@@ -106,7 +106,7 @@ footer {
             padding: 10px;
             position: relative;
             width: 100%;
-            height: 15px;
+            /* height: 15px; */
         }
  
  </style>
@@ -121,7 +121,7 @@ footer {
  </header>
 
 
- <section>
+ <section >
    <div class="student">
           <h3 >Tufail</h3>
       <div class="icons">
@@ -136,7 +136,7 @@ footer {
             He is highly skilled in JavaScript, using it to develop interactive web applications with dynamic features. 
             His knowledge of Python has allowed him to dive into web back-end development, data science, and even automation. 
             Tufail also has experience with Java, which he has used to develop robust back-end systems and Android applications.</span></p>
-      <button  onclick=" myFunction(1)"  id="btn1"  class="btn">Read More </button>
+      <button  onclick=" myFunction(1)"  id="btn1"  class="btnS">Read More </button>
   </div>
 
 
@@ -154,7 +154,7 @@ footer {
             beautiful and accessible websites. His proficiency in JavaScript allows him to implement complex interactive features on the web.
              Additionally, Arpit is skilled in Python, having used it for web development with frameworks like Django and Flask, as well as data analysis
               and automation tasks. He is also familiar with Java, having built a variety of applications and working with its powerful libraries.</span></p>
-        <button   onclick=" myFunction(2)"  id="btn2"   class="btn">Read More </button>
+        <button   onclick=" myFunction(2)"  id="btn2"   class="btnS">Read More </button>
     </div>
 
 
@@ -172,7 +172,7 @@ footer {
           and Android development. On top of that, Kashif is well-versed in web technologies like HTML, CSS, and JavaScript, which he
            combines to develop dynamic websites with rich user interfaces. His knowledge of Python enables him to automate tasks and work
             on machine learning projects as well.</span></p>
-      <button  onclick=" myFunction(3)"  id="btn3"    class="btn">Read More </button>
+      <button  onclick=" myFunction(3)"  id="btn3"    class="btnS">Read More </button>
    </div>
 
 
@@ -190,7 +190,7 @@ footer {
            Her understanding of JavaScript allows her to add interactivity to websites, and she is also proficient in Python,
             which she has used to work on back-end projects and data analysis. Amisha's adaptability allows her to seamlessly
              switch between front-end and back-end tasks, making her an asset in full-stack development.</span></p>
-       <button   onclick=" myFunction(4)" id="btn4"    class="btn">Read More </button>
+       <button   onclick=" myFunction(4)" id="btn4"    class="btnS">Read More </button>
    </div>
   
   </section>
@@ -224,9 +224,15 @@ else
 </script>
 
  
- 
+<div class="d-flex justify-content-between mx-5 my-2">
+  <button class="btn btn-outline-warning" onclick="HandleBack()">&larr; BACK</button>
+  <button class="btn btn-outline-warning" onclick="HandleNxt()">NEXT &rarr;</button>
+</div>
     <footer>
         <p>contact@binaryblasters.com</p>
     </footer>
+
+    <script src="../JS/BckNxtBtn.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html> 
