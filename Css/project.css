@@ -34,7 +34,7 @@ section{
 }
 .navBtn {
     padding: 0.5rem 1rem;
-    background-color: #2e5567; /* Default background color */
+    background-color: #2e5567; 
     border: 2px solid black;
     border-radius: 0.5rem;
     color: aliceblue;
