@@ -6,7 +6,8 @@ body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 section{
-    padding-left: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 /* .main{
     padding-left: 25px;
@@ -24,7 +25,7 @@ section{
     background-color: #1a1a1a;
 }
 .overview h3{
-    text-align: center;
+    text-align: center; 
     color: #ff5722;
 }
 .box{
@@ -36,7 +37,7 @@ section{
 
 .navBtn {
     padding: 0.5rem 1rem;
-    background-color: #2e5567; /* Default background color */
+    background-color: #2e5567; 
     border: 2px solid black;
     border-radius: 0.5rem;
     color: aliceblue;
