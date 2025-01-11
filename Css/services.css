@@ -85,4 +85,39 @@ body {
     text-align: center;
     padding: 1rem 0;
   }
+  .navBtn {
+    padding: 0.5rem 1rem;
+    background-color: #2e5567; 
+    border: 2px solid black;
+    border-radius: 0.5rem;
+    color: aliceblue;
+    font-size: medium;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.3); 
+    cursor: pointer;
+    transition: all 0.3s ease; 
+    position: relative; 
+    overflow: hidden; 
+}
+.navBtn::after {
+    content: '';
+    position: absolute;
+    top: -20%;
+    left: -20%;
+    width: 140%;
+    height: 140%; 
+    background-color: #1d3c4d; 
+    z-index: -1; 
+    border-radius: 50%; 
+    transform: scale(0); 
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+.navBtn:hover::after {
+    transform: scale(1); 
+    background-color: #1a2f3a; 
+}
+.navBtn:hover {
+    color: #fff; 
+    box-shadow: 4px 6px 8px rgba(0, 0, 0, 0.5); 
+}
+
   
