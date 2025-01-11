@@ -32,9 +32,6 @@ section{
     display: flex;
     justify-content: space-evenly;
 }
-
-
-
 .navBtn {
     padding: 0.5rem 1rem;
     background-color: #2e5567; /* Default background color */
@@ -46,9 +43,8 @@ section{
     cursor: pointer;
     transition: all 0.3s ease; 
     position: relative; 
-    overflow: hidden; */
+    overflow: hidden; 
 }
-
 .navBtn::after {
     content: '';
     position: absolute;
@@ -62,13 +58,18 @@ section{
     transform: scale(0); 
     transition: transform 0.3s ease, background-color 0.3s ease;
 }
-
 .navBtn:hover::after {
     transform: scale(1); 
     background-color: #1a2f3a; 
 }
-
 .navBtn:hover {
     color: #fff; 
     box-shadow: 4px 6px 8px rgba(0, 0, 0, 0.5); 
+}
+footer{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(to right,#2e5567,#1a1a1a);
+    color: #fff;
 }
