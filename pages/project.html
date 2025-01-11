@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../Css/project.css">
     <title>Document</title>
+   <style>
+    .navBtn{
+        padding: 0.5rem;
+    }
+   </style>
 </head>
 <body>
     <section>
@@ -85,11 +90,15 @@
 
 
      </div> 
-    </section>      
+    </section>  
+    <div class="d-flex justify-content-between mx-5 my-2" style="display: flex; justify-content: space-between; margin: 2rem;">
+        <button class="btn btn-outline-primary navBtn" onclick="HandleBack()">&larr; BACK</button>
+        <button class="btn btn-outline-primary navBtn" onclick="HandleNxt()">NEXT &rarr;</button>
+      </div>    
    <footer>
     
    </footer>
     
-
+    <script src="../JS/BckNxtBtn.js"></script>
 </body>
 </html>
