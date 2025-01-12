@@ -1,0 +1,21 @@
+[
+    {
+      "title": "Web Development",
+      "description": "We create responsive, modern websites that help your business shine online.",
+      "image": "../assets/Sevices/WebDev.jpg",
+      "details": "Our web development services include responsive design, e-commerce solutions, and modern frameworks like React and Angular."
+    },
+    {
+      "title": "Graphic Design",
+      "description": "Eye-catching designs that make your brand stand out from the crowd.",
+      "image": "../assets/Sevices/GraphicDes.jpg",
+       "details": "We specialize in logos, marketing materials, social media graphics, and branding packages."
+    },
+    {
+      "title": "SEO Optimization",
+      "description": "Improve your search engine ranking and reach more customers.",
+      "image": "../assets/Sevices/seo.jpg",
+      "details": "Our SEO services include keyword research, on-page optimization, and backlink strategies."
+    }
+  ]
+  

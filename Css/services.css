@@ -1,0 +1,123 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #2e5567;
+    color: #f9f9f9;
+  }
+  
+  
+  .services {
+    text-align: center;
+    padding: 2rem 1rem;
+  }
+  
+  .services h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: #f9f9f9;
+  }
+  
+  .services p {
+    font-size: 1.2rem;
+    color: #f7f4f4;
+    margin-bottom: 2rem;
+  }
+  
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 1rem;
+  }
+  
+  .service-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .service-card img {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 1rem;
+  }
+  
+  .service-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .service-card p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 1rem;
+    font-weight: 600;
+  }
+  
+  .service-card button {
+    padding: 0.5rem 1rem;
+    background-color: #2e5567;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .service-card button:hover {
+    background-color: #1d3c4d;
+  }
+  
+  .service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 4px 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  footer {
+    background-color: #1a1a1a;
+    color: aliceblue;
+    text-align: center;
+    padding: 1rem 0;
+  }
+  .navBtn {
+    padding: 0.5rem 1rem;
+    background-color: #2e5567; 
+    border: 2px solid black;
+    border-radius: 0.5rem;
+    color: aliceblue;
+    font-size: medium;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.3); 
+    cursor: pointer;
+    transition: all 0.3s ease; 
+    position: relative; 
+    overflow: hidden; 
+}
+.navBtn::after {
+    content: '';
+    position: absolute;
+    top: -20%;
+    left: -20%;
+    width: 140%;
+    height: 140%; 
+    background-color: #1d3c4d; 
+    z-index: -1; 
+    border-radius: 50%; 
+    transform: scale(0); 
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+.navBtn:hover::after {
+    transform: scale(1); 
+    background-color: #1a2f3a; 
+}
+.navBtn:hover {
+    color: #fff; 
+    box-shadow: 4px 6px 8px rgba(0, 0, 0, 0.5); 
+}
+
+  
