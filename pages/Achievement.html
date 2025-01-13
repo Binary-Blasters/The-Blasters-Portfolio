@@ -6,138 +6,21 @@
     <title>Binary Blasters Achievements</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="Achievement.html">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-         /*   background-color: #1e1e2f;  */
-         background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-            color: #fff;
-            margin: 0;
-            padding: 0;
-            overflow-x: hidden;
-        }
+    <link rel="stylesheet" href="../Css/Achievement.css">
 
-        .container {
-            max-width: 900px;
-            margin: 40px auto;
-            padding: 20px;
-           /* background-color: #2b2b3c;   */
-           background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-        }
-
-        h1 {
-            text-align: center;
-            color: #00e676;
-            margin-bottom: 30px;
-            animation: slideInDown 1s ease-out;
-        }
-
-        .achievement-list {
-            list-style: none;
-            padding: 0;
-        }
-
-        .achievement-item {
-         /*   background: #39395a;  */
-         background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-            margin: 20px 0;
-            padding: 20px;
-            border-radius: 10px;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            opacity: 0;
-            transform: translateX(-100px);
-            animation: slideIn 1s forwards ease-in-out;
-        }
-
-        .achievement-item:nth-child(even) {
-            animation-delay: 0.2s;
-        }
-
-        .achievement-item:nth-child(odd) {
-            animation-delay: 0.4s;
-        }
-
-        .achievement-title {
-            font-size: 20px;
-            margin-bottom: 10px;
-        }
-
-        .member-list {
-            margin-left: 20px;
-            font-size: 16px;
-        }
-
-        input[type="checkbox"] {
-            display: none;
-        }
-
-        .achievement-item label {
-            cursor: pointer;
-            color: #fff;
-            transition: color 0.3s;
-        }
-
-        input[type="checkbox"]:checked ~ .achievement-item label {
-            color: #00e676;
-        }
-
-        .achievement-item.completed {
-            background: #00e676;
-            color: #1e1e2f;
-            animation: glow 1.5s infinite alternate ease-in-out;
-        }
-
-        /* Animations */
-        @keyframes slideIn {
-            from {
-                opacity: 0;
-                transform: translateX(-100px);
-            }
-            to {
-                opacity: 1;
-                transform: translateX(0);
-            }
-        }
-
-        @keyframes slideInDown {
-            from {
-                opacity: 0;
-                transform: translateY(-50px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        @keyframes glow {
-            from {
-                box-shadow: 0 0 10px #00e676, 0 0 20px #00e676;
-            }
-            to {
-                box-shadow: 0 0 20px #00c864, 0 0 30px #00c864;
-            }
-        }
-    </style>
 </head>
 <body>
-    <header class="navbar">
+    <header class="navbaR">
         <div class="containeR">
-          <!-- <a href="./index.html" class="logo">The Blasters Portfolio</a> -->
           <a href="/The-Blasters-Portfolio/index.html" class="logo">The Blasters Portfolio</a>
           <nav>
             <ul class="nav-linkS">
               <li><a href="/The-Blasters-Portfolio/index.html">Home</a></li>
-              <li><a href="/The-Blasters-Portfolio//pages/portfolio.html">Portfolio</a></li>
+              <li><a href="/The-Blasters-Portfolio/pages/portfolio.html">Portfolio</a></li>
               <li><a href="/The-Blasters-Portfolio/pages/project.html">Projects</a></li>
-              <li><a href="/The-Blasters-Portfolio/pages/services.html">Services</a></li>
+              <li><a href="/The-Blasters-Portfolio//pages/services.html">Services</a></li>
               <li><a href="/The-Blasters-Portfolio/pages/About-Us.html">About Us</a></li>
-              <li><a href="/pages/Achievement.html">Achievements</a></li>
+              <li><a href="#achievements">Achievements</a></li>
               <li><a href="/The-Blasters-Portfolio/pages/contact.html">Contact Us</a></li>
             </ul>
           </nav>
@@ -177,18 +60,19 @@
           </ol>
           <div class="carousel-inner">
             <div class="item active">
-              <img src="/assets/images/wp7723775.webp" alt="Los Angeles" style="width:100%;">
+              <!-- <img src="/assets/images/wp7723775.webp" alt="Los Angeles" style="width:100%;"> -->
+              <img src="/The-Blasters-Portfolio/assets/images/wp7723775.webp" alt="Los Angeles" style="width:100%;">
             </div>
       
             <div class="item">
-              <img src="/assets/images/wp7442880.webp" alt="Chicago" style="width: 100%;">
+              <img src="/The-Blasters-Portfolio/assets/images/wp7442880.webp" alt="Chicago" style="width: 100%;">
             </div>
           
             <div class="item">
-              <img src="/assets/images/wp5941452.webp" alt="New york" style="width: 100%;">
+              <img src="/The-Blasters-Portfolio/assets/images/wp5941452.webp" alt="New york" style="width: 100%;">
             </div>
             <div class="item">
-                <img src="/assets/images/OIP.jpg" alt="New york" style="width: 100%;">
+                <img src="/The-Blasters-Portfolio/assets/images/OIP.jpg" alt="New york" style="width: 100%;">
               </div>
           </div>
           <a class="left carousel-control" href="#myCarousel" data-slide="prev">
