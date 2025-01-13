@@ -3,14 +3,8 @@
     padding: 0;
     box-sizing: border-box;
   }
-  body {
-    background-color: #2e5567;
-    color: wheat;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-.containeR {
+ 
+  .containeR {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -131,31 +125,7 @@ i:hover{
 
    
 
-      header {
-        background: #1d3c47;
-        padding: 1rem 2rem;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-      }
-
-      header .logo {
-        color: white;
-        text-decoration: none;
-        font-size: 1.5rem;
-        font-weight: bold;
-      }
-
-      header .nav-linkS {
-        display: flex;
-        gap: 1rem;
-      }
-
-      header .nav-linkS a {
-        color: wheat;
-        text-decoration: none;
-      }
-
+      
       .team-card {
         display: flex;
         align-items: center;
