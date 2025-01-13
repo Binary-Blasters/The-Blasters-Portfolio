@@ -80,6 +80,7 @@ i{
 }
 i:hover{
     color: #01a4f0;
+    transform: scale(1.1);
 }
 
 .navBtn {
