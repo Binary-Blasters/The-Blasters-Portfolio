@@ -244,7 +244,7 @@ body {
 
 .navBtn {
     padding: 0.5rem 1rem;
-    background-color: #4caf50; 
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
     border: 2px solid black;
     border-radius: 0.5rem;
     color: aliceblue;
