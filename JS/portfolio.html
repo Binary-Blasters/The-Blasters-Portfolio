@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color:#2e5567;
+        }
+        header {
+             border-radius: 20px;
+             
+             padding: 20px;
+             text-align: center;
+             color: aliceblue;
+             text-align: center;
+             font-size: 30px;
+  
+}
+
+        
+        .container{
+            display: grid;
+            grid-template-columns: 1fr 1fr; /* Two columns */
+            grid-template-rows: auto auto auto auto; /* Four rows */
+            height: 100vh; /* Full viewport height */
+            gap: 10px;
+            margin-left: 50px;
+            border-radius: 20px;
+            text-align: center;
+            color: black;
+           
+             
+             
+        }
+        #profile1{
+            background-color:aliceblue ;
+            width: 400px;
+            height:450px;
+            color:#2e5567;
+            margin-top: 50px;
+            border-radius: 20px;
+            text-align:left;
+           
+            padding-left: 20px;
+        }
+
+        #profile2{
+            background-color:aliceblue;
+            margin-top: 50px;
+            color: #2e5567; 
+            text-align:left;
+            width: 400px;
+            height:450px;
+           
+            border-radius: 20px;
+            padding-left: 20px;
+            
+        }
+
+        #profile3{
+            background-color: aliceblue;
+            width: 400px;
+            height:450px;
+            color: #2e5567; ;
+            margin-top: 50px;
+            text-align:left;
+            border-radius: 20px;
+           
+            padding-left: 20px;
+            
+        }
+
+        #profile4{
+            background-color:aliceblue;
+            width: 400px;
+            height:450px;
+            color:#2e5567 ;
+            margin-top: 50px;
+            text-align: left;
+            border-radius: 20px;
+          
+            padding-left: 20px;
+        }
+   .container > #profile1 {
+    grid-column: 1; /* First column */
+    grid-row: 1;    /* First row */
+}
+
+.container > #profile2 {
+    grid-column: 2; /* Second column */
+    grid-row: 2;    /* Second row */
+}
+
+.container > #profile3 {
+    grid-column: 1; /* First column */
+    grid-row: 3;    /* Third row */
+}
+
+.container > #profile4 {
+    grid-column: 2; /* Second column */
+    grid-row: 4;    /* Fourth row */
+}
+.btn{
+ border-radius: 5px;
+ height: 30px;
+ transition:1s;
+ background-color: #2e5567;
+ color: aliceblue;
+}
+.btn:hover{
+  transform: scale(1.3);
+             z-index:2; 
+}
+h2{
+  text-align: center;
+  font-size: 40px;
+}
+
+
+    </style>
+</head>
+<body>
+  <header>
+    <h1>Team Achievements </h1>
+    <p style="font-size: 25px;">Here, we highlight the exceptional achievements of our
+       dedicated members who have gone above and beyond to make a difference.</p>
+
+    </header>
+  <div class="container">
+    
+        
+        
+        <div id="profile1">
+          <h2>Arpit</h2>
+          <p><strong style="font-size: 30px;">Skills:</strong><p style="font-size: 20px;"> HTML,CSS,JavaScript</p> </p>
+          <p><strong style="font-size: 30px;" >Achievements:</strong>
+          <ul style="font-size: 20px;">
+            <li>Completed HTML Basics - <span class="badge">✔</span></li>
+            <li>Completed CSS Fundamentals - <span class="badge">✔</span></li>
+            <li>JavaScript Introduction - <span class="badge">✔</span></li>
+            <li>First Responsive Website - <span class="badge">✔</span></li>
+          </ul>
+          </p>
+          <button href="https://binary-blasters.github.io/Project-2/" class="btn">View Website</button>
+        </div>
+    
+        <div id="profile2">
+          <h2>Tufail</h2>
+          <p><strong style="font-size: 30px;">Skills:</strong> <p style="font-size: 20px;"> HTML,CSS,JavaScript</p></p>
+          <p><strong style="font-size: 30px;">Achievements:</strong>
+          <ul style="font-size: 20px;">
+            <li >Completed HTML Basics - <span class="badge">✔</span></li>
+            <li>Completed CSS Fundamentals - <span class="badge">✔</span></li>
+            <li>JavaScript Introduction - <span class="badge">✔</span></li>
+            <li>First Responsive Website - <span class="badge">✔</span></li>
+          </ul>
+          </p>
+          <button href="https://binary-blasters.github.io/Project-2/" class="btn">View Website</button>
+          
+        </div>
+    
+        <div id="profile3">
+          <h2>Kashif</h2>
+          <p><strong style="font-size: 30px;">Skills:</strong> <p style="font-size: 20px;"> HTML,CSS,JavaScript</p></p>
+          <p><strong style="font-size: 30px;">Achievements:</strong>
+          <ul style="font-size: 20px;" >
+            <li>Completed HTML Basics - <span class="badge">✔</span></li>
+            <li>Completed CSS Fundamentals - <span class="badge">✔</span></li>
+            <li>JavaScript Introduction - <span class="badge">✔</span></li>
+            <li>First Responsive Website - <span class="badge">✔</span></li>
+          </ul>
+          </p>
+          <button href="https://binary-blasters.github.io/Project-2/" class="btn">View Website</button>
+        </div>
+    
+        <div id="profile4">
+          <h2>Amisha</h2>
+          <p><strong style="font-size: 30px;">Skills:</strong> <p style="font-size: 20px;"> HTML,CSS,JavaScript</p></p>
+          <p><strong style="font-size: 30px;">Achievements:</strong>
+          <ul style="font-size: 20px;">
+            <li>Completed HTML Basics - <span class="badge">✔</span></li>
+            <li>Completed CSS Fundamentals - <span class="badge">✔</span></li>
+           <li>JavaScript Introduction - <span class="badge">✔</span></li>
+           <li>First Responsive Website - <span class="badge">✔</span></li>
+          </ul>
+          </p>
+          <button href="https://binary-blasters.github.io/Project-2/" class="btn">View Website</button>
+          
+        </div>
+      </div>
+    
+</body>
+</html>
