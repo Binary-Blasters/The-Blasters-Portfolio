@@ -48,24 +48,37 @@
         text-decoration: none;
         transition: color 0.3s ease;
     }
+    .contact{
+        text-decoration: none;
+        color: #ffffff;
+    }
+    .contact:hover{
+        text-decoration: none;
+        color: #fb7373;
+        transform: scale(1.2);
+    }
 
     .footer-section ul li a:hover {
         color: #ffffff;
     }
-
+   
     .social-icons {
         display: flex;
         gap: 10px;
         margin-top: 10px;
     }
-
-    .social-icons a img {
+    .social-icons a{
+        text-decoration: none;
+        color: aqua;
+        font-size: large;
+    }
+    .social-icons a i {
         width: 30px;
         height: 30px;
         transition: transform 0.3s ease;
     }
 
-    .social-icons a img:hover {
+    .social-icons a i:hover {
         transform: scale(1.2);
     }
 
