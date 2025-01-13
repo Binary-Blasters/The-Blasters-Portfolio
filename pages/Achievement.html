@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binary Blasters Achievements</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+         /*   background-color: #1e1e2f;  */
+         background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+           /* background-color: #2b2b3c;   */
+           background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        h1 {
+            text-align: center;
+            color: #00e676;
+            margin-bottom: 30px;
+            animation: slideInDown 1s ease-out;
+        }
+
+        .achievement-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .achievement-item {
+         /*   background: #39395a;  */
+         background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            opacity: 0;
+            transform: translateX(-100px);
+            animation: slideIn 1s forwards ease-in-out;
+        }
+
+        .achievement-item:nth-child(even) {
+            animation-delay: 0.2s;
+        }
+
+        .achievement-item:nth-child(odd) {
+            animation-delay: 0.4s;
+        }
+
+        .achievement-title {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .member-list {
+            margin-left: 20px;
+            font-size: 16px;
+        }
+
+        input[type="checkbox"] {
+            display: none;
+        }
+
+        .achievement-item label {
+            cursor: pointer;
+            color: #fff;
+            transition: color 0.3s;
+        }
+
+        input[type="checkbox"]:checked ~ .achievement-item label {
+            color: #00e676;
+        }
+
+        .achievement-item.completed {
+            background: #00e676;
+            color: #1e1e2f;
+            animation: glow 1.5s infinite alternate ease-in-out;
+        }
+
+        /* Animations */
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateX(-100px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes slideInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes glow {
+            from {
+                box-shadow: 0 0 10px #00e676, 0 0 20px #00e676;
+            }
+            to {
+                box-shadow: 0 0 20px #00c864, 0 0 30px #00c864;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Binary Blasters Achievements</h1>
+        <ul class="achievement-list">
+            <li class="achievement-item">
+                <input type="checkbox" id="achievement1">
+                <label for="achievement1" class="achievement-title">[1]. Our website Binary Blasters - Notes related to CSE 4th Sem</label>
+            </li>
+
+            <li class="achievement-item">
+                <input type="checkbox" id="achievement2">
+                <label for="achievement2" class="achievement-title">[2]. Our website The Binary Blasters Portfolio about team our members:</label>
+                <ul class="member-list">
+                    <li>Arpit</li>
+                    <li>Tufail</li>
+                    <li>Kashif</li>
+                    <li>Amisha</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
