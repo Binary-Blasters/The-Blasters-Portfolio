@@ -11,12 +11,11 @@ body {
 
   
  
-  .containeR {
+.containeR {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: #333;
   }
   
   .navbar {
@@ -84,9 +83,9 @@ body {
       display: block;
     }
   }
+  
 
-
-header {
+.header {
     text-align: center;
     padding: 50px 20px;
     background-color: rgba(0, 0, 0, 0.7);
@@ -94,13 +93,13 @@ header {
     animation: fadeIn 2s ease-in-out;
 }
 
-header h1 {
+.header h1 {
     font-size: 3.5rem;
     margin: 0;
     font-weight: bold;
 }
 
-header p {
+.header p {
     font-size: 1.2rem;
     margin-top: 10px;
     opacity: 0.8;
