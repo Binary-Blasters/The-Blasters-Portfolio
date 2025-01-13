@@ -1,8 +1,8 @@
-/* * {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  } */
+  }
 body{
     color: white;
     background-color: #2e5567;
@@ -91,11 +91,15 @@ section{
     padding-left: 15px;
     padding-right: 15px;
 }
-/* .main{
+.main{
     padding-left: 25px;
-} */
+}
 #heading{
     font-size: 25px;
+    
+}
+.introduction{
+  margin-left: 2rem;
 }
 .introduction h2{
     font-weight: bold;
@@ -104,6 +108,7 @@ section{
     border-radius: 10px;
     width: 450px;
     padding-left: 15px;  
+    padding: 2rem;
     background-color: #1a1a1a;
 }
 .overview h3{
