@@ -26,7 +26,7 @@ body {
         position: sticky;
         top: 0;
         z-index: 1000;
-        background-color: #333;
+        background-color:#1b3a4b;
         color: #fff;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
       }
@@ -90,7 +90,7 @@ body {
       
       
 .header {
-  background-color: #1a1a1a;
+  background-color: #1b3a4b;
   padding: 20px;
   text-align: center;
   color: #ddd;
@@ -106,22 +106,27 @@ body {
   padding: 20px;
   margin-top: 80px;
   margin-bottom: 80px;
-  border-radius: 50px;
-  background-color: #1a1a1a;
+  border-radius: 40px;
+  background-color:#1b3a4b;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   width: 700px;
   color: #ddd;
+  
 }
+
 .btnS {
-  background-color: #1a1a1a;
+  background-color: #1b3a4b;
   border-radius: 20px;
   color: white;
   margin-top: 20px;
+  width: 90px;
+  height: 25px;
+  border-color:#ddd;
 }
 
 .btnS:hover {
   box-shadow: 3px 5px 6px white;
-  transition: 0.3s ease-in-out;
+  transition: 0.1s ease-in-out;
   background-color: #ff5722;
 }
 
@@ -130,7 +135,7 @@ body {
 }
 
 .icons {
-  background-color: #1a1a1a;
+  background-color: #1b3a4b;
   margin-left: 50px;
   margin-right: 50px;
   display: inline-block;
