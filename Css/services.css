@@ -107,7 +107,7 @@ body {
   
   .services-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Dynamic column layout */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
     gap: 2rem;
     padding: 1rem;
   }
@@ -123,9 +123,9 @@ body {
   }
   
   .service-card img {
-    width: 100%; /* Responsive image width */
-    max-width: 200px; /* Limit image size */
-    height: auto; /* Maintain aspect ratio */
+    width: 100%; 
+    max-width: 200px; 
+    height: auto; 
     margin-bottom: 1rem;
   }
   
@@ -160,50 +160,50 @@ body {
     box-shadow: 4px 6px 12px rgba(0, 0, 0, 0.2);
   }
   
-  /* Responsive Styles */
+  
   @media (max-width: 768px) {
     .services h1 {
-      font-size: 2rem; /* Adjust heading size for tablets */
+      font-size: 2rem; 
     }
   
     .services p {
-      font-size: 1rem; /* Adjust paragraph font size */
+      font-size: 1rem; 
     }
   
     .service-card {
-      padding: 1rem; /* Reduce padding for smaller screens */
+      padding: 1rem; 
     }
   
     .service-card h2 {
-      font-size: 1.3rem; /* Adjust heading size in cards */
+      font-size: 1.3rem;
     }
   
     .service-card p {
-      font-size: 0.9rem; /* Adjust paragraph size in cards */
+      font-size: 0.9rem;
     }
   }
   
   @media (max-width: 480px) {
     .services h1 {
-      font-size: 1.8rem; /* Further reduce heading size for mobile devices */
+      font-size: 1.8rem;
     }
   
     .services p {
-      font-size: 0.9rem; /* Further reduce paragraph font size */
+      font-size: 0.9rem; 
     }
   
     .services-grid {
-      grid-template-columns: 1fr; /* Single column layout for small screens */
-      gap: 1.5rem; /* Reduce gap between items */
+      grid-template-columns: 1fr; 
+      gap: 1.5rem;
     }
   
     .service-card img {
-      max-width: 150px; /* Reduce image size for small screens */
+      max-width: 150px; 
     }
   
     .service-card button {
-      font-size: 0.9rem; /* Adjust button font size */
-      padding: 0.4rem 0.8rem; /* Reduce button padding */
+      font-size: 0.9rem; 
+      padding: 0.4rem 0.8rem;
     }
   }
   
