@@ -111,7 +111,8 @@ body {
 
 .btnS {
   background-color: #1b3a4b;
-  border-radius: 20px;
+  border-radius: 0.5rem;
+  padding: 0.25rem;
   color: white;
   margin-top: 20px;
   width: 90px;
