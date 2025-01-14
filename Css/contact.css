@@ -136,15 +136,15 @@ i:hover{
       
 .team-card {
   display: flex;
-  flex-direction: row; /* Ensure horizontal layout */
+  flex-direction: row; 
   align-items: center;
   justify-content: space-between;
-  margin: 2rem auto; /* Center cards horizontally */
+  margin: 2rem auto; 
   background: rgba(255, 255, 255, 0.1);
   padding: 1.5rem;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  max-width: 90%; /* Adjust card width for smaller screens */
+  max-width: 90%; 
 }
 
 .team-card img {
@@ -162,7 +162,7 @@ i:hover{
 }
 
 .team-card .details {
-  flex: 1; /* Allow details to grow/shrink */
+  flex: 1; 
   max-width: 70%;
 }
 
@@ -170,13 +170,13 @@ i:hover{
   margin: 0.5rem 0;
 }
 
-/* Responsive Styles */
+
 @media (max-width: 768px) {
   .team-card {
-    flex-direction: column; /* Stack cards vertically on smaller screens */
-    align-items: center; /* Center-align contents */
+    flex-direction: column; 
+    align-items: center; 
     text-align: center;
-    margin: 1rem auto; /* Reduce margin */
+    margin: 1rem auto;
   }
 
   .team-card img {
@@ -184,31 +184,31 @@ i:hover{
   }
 
   .team-card .details {
-    max-width: 100%; /* Allow details to span full width */
+    max-width: 100%;
   }
 }
 
 @media (max-width: 480px) {
   .team-card {
-    padding: 1rem; /* Reduce padding for smaller screens */
+    padding: 1rem; 
   }
 
   .team-card img {
-    width: 120px; /* Reduce image size */
+    width: 120px; 
     height: 120px;
   }
 
   .team-card .details p {
-    font-size: 14px; /* Adjust text size for readability */
+    font-size: 14px; 
   }
 
   .social-icons a {
     margin: 0 5px;
-    font-size: 18px; /* Adjust icon size */
+    font-size: 18px; 
   }
 }
 
-/* Pulse Animation */
+
 @keyframes pulse {
   0%, 100% {
     transform: scale(1);
