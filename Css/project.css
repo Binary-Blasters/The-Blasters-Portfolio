@@ -109,7 +109,7 @@ body{
     overflow: hidden;
     padding: 20px;
 }
-.content{
+ .content{
     display: flex;
     justify-content: space-evenly;
     padding-top: 50px;
