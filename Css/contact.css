@@ -134,37 +134,86 @@ i:hover{
    
 
       
-      .team-card {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin: 2rem 5rem;
-        background: rgba(255, 255, 255, 0.1);
-        padding: 1.5rem;
-        border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-      }
+.team-card {
+  display: flex;
+  flex-direction: row; /* Ensure horizontal layout */
+  align-items: center;
+  justify-content: space-between;
+  margin: 2rem auto; /* Center cards horizontally */
+  background: rgba(255, 255, 255, 0.1);
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 90%; /* Adjust card width for smaller screens */
+}
 
-      .team-card img {
-        width: 150px;
-        height: 150px;
-        border-radius: 50%;
-        margin: 1rem;
-        border: 4px solid aqua;
-        transition: transform 0.3s;
-        animation: pulse 3s infinite;
-      }
+.team-card img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 1rem;
+  border: 4px solid aqua;
+  transition: transform 0.3s;
+  animation: pulse 3s infinite;
+}
 
-      .team-card img:hover {
-        transform: scale(1.1) rotate(10deg);
-      }
+.team-card img:hover {
+  transform: scale(1.1) rotate(10deg);
+}
 
-      .team-card .details {
-        max-width: 70%;
-      }
+.team-card .details {
+  flex: 1; /* Allow details to grow/shrink */
+  max-width: 70%;
+}
 
-      .team-card .details p {
-        margin: 0.5rem 0;
-      }
+.team-card .details p {
+  margin: 0.5rem 0;
+}
 
-     
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .team-card {
+    flex-direction: column; /* Stack cards vertically on smaller screens */
+    align-items: center; /* Center-align contents */
+    text-align: center;
+    margin: 1rem auto; /* Reduce margin */
+  }
+
+  .team-card img {
+    margin-bottom: 1rem;
+  }
+
+  .team-card .details {
+    max-width: 100%; /* Allow details to span full width */
+  }
+}
+
+@media (max-width: 480px) {
+  .team-card {
+    padding: 1rem; /* Reduce padding for smaller screens */
+  }
+
+  .team-card img {
+    width: 120px; /* Reduce image size */
+    height: 120px;
+  }
+
+  .team-card .details p {
+    font-size: 14px; /* Adjust text size for readability */
+  }
+
+  .social-icons a {
+    margin: 0 5px;
+    font-size: 18px; /* Adjust icon size */
+  }
+}
+
+/* Pulse Animation */
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
