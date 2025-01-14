@@ -249,7 +249,7 @@ body{
   }
   
 
-.navBtN {
+/* .navBtN {
   padding: 0.5rem 1rem;
   background-color: #2e5567; 
   border: 2px solid black;
@@ -282,4 +282,4 @@ body{
 .navBtN:hover {
   color: #fff; 
   box-shadow: 4px 6px 8px rgba(0, 0, 0, 0.5); 
-}
+} */
