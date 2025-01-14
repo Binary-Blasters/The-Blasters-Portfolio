@@ -167,43 +167,4 @@ i:hover{
         margin: 0.5rem 0;
       }
 
-      .social-icons a {
-        margin-right: 10px;
-        color: aqua;
-        font-size: 1.5rem;
-        transition: color 0.3s;
-      }
-
-      .social-icons a:hover {
-        color: white;
-      }
-
-      footer {
-        background: #1d3c47;
-        color: wheat;
-        padding: 2rem;
-        text-align: center;
-      }
-
-      footer .social-icons a {
-        margin: 0 10px;
-        color: aqua;
-        font-size: 1.5rem;
-      }
-
-      /* Circle Animation */
-      @keyframes pulse {
-        0% {
-          transform: scale(1);
-          box-shadow: 0 0 10px rgba(0, 255, 255, 0.7);
-        }
-        50% {
-          transform: scale(1.05);
-          box-shadow: 0 0 20px rgba(0, 255, 255, 1);
-        }
-        100% {
-          transform: scale(1);
-          box-shadow: 0 0 10px rgba(0, 255, 255, 0.7);
-        }
-      }
-   
+     
