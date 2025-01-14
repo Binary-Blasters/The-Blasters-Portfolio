@@ -3,4 +3,11 @@ const hamburger = document.getElementById('hamburger');
 
     hamburger.addEventListener('click', () => {
       navbarNav.classList.toggle('active');
+      removeNav();
     });
+
+    const removeNav=()=>{
+      setTimeout(() => {
+        navbarNav.classList.remove('active')
+      }, 1.5*1000);
+    }
