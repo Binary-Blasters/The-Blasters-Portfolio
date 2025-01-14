@@ -159,12 +159,7 @@ body {
     box-shadow: 4px 6px 12px rgba(0, 0, 0, 0.2);
   }
   
-  footer {
-    background-color: #1a1a1a;
-    color: aliceblue;
-    text-align: center;
-    padding: 1rem 0;
-  }
+ 
   .navBtn {
     padding: 0.5rem 1rem;
     background-color: #2e5567; 
