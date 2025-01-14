@@ -115,9 +115,12 @@
   
   .kta-buttons {
     display: flex;
-    position: absolute;
+    /* position: absolute; */
     left: 570px;
     gap: 30px;
+  }
+  .BB-Port{
+    margin-left: 90px;
   }
   
   .btn-primarY, .btn-secondarY {
