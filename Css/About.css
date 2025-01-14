@@ -120,9 +120,9 @@ body {
 }
 
 .btnS:hover {
-  box-shadow: 3px 5px 6px white;
+  box-shadow: 3px 5px 6px rgba(245, 222, 179, 0.701);
   transition: 0.1s ease-in-out;
-  background-color: #ff5722;
+  background-color: #62c7fe84;
 }
 
 .invisible-text {
