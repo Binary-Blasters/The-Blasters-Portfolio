@@ -84,83 +84,141 @@ body {
       }
       
       
-.header {
-  background-color: #1b3a4b;
-  padding: 20px;
-  text-align: center;
-  color: #ddd;
-  text-align: center;
-}
-.section {
-  padding: 40px;
-  text-align: center;
-}
-
-.student {
-  border: 1px solid #ddd;
-  padding: 20px;
-  margin-top: 80px;
-  margin-bottom: 80px;
-  border-radius: 40px;
-  background-color:#1b3a4b;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 700px;
-  color: #ddd;
-  
-}
-
-.btnS {
-  background-color: #1b3a4b;
-  border-radius: 0.5rem;
-  padding: 0.25rem;
-  color: white;
-  margin-top: 20px;
-  width: 90px;
-  height: 25px;
-  border-color:#ddd;
-}
-
-.btnS:hover {
-  box-shadow: 3px 5px 6px rgba(245, 222, 179, 0.701);
-  transition: 0.1s ease-in-out;
-  background-color: #62c7fe84;
-}
-
-.invisible-text {
-  display: none;
-}
-
-.icons {
-  background-color: #1b3a4b;
-  margin-left: 50px;
-  margin-right: 50px;
-  display: inline-block;
-}
-.icons a {
-  margin: 20px;
-  text-decoration: none;
-  font-size: 30px;
-
-  transition: 1s;
-}
-
-.icons a:hover {
-  transform: scale(1.3);
-  z-index: 2;
-}
-
-h3 {
-  color: #ddd;
-  font-size: 40px;
-}
-
-p {
-  font-size: 20px;
-  margin-top: 00px;
-}
-#para {
-  font-size: 30px;
-}
+      .header {
+        background-color: #1b3a4b;
+        padding: 20px;
+        text-align: center;
+        color: #ddd;
+      }
+      
+      .section {
+        padding: 40px;
+        text-align: center;
+      }
+      
+      .student {
+        border: 1px solid #ddd;
+        padding: 20px;
+        margin-top: 80px;
+        margin-bottom: 80px;
+        border-radius: 40px;
+        background-color: #1b3a4b;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        width: 700px;
+        color: #ddd;
+        margin-left: auto;
+        margin-right: auto; /* Center the element horizontally */
+      }
+      
+      .btnS {
+        background-color: #1b3a4b;
+        border-radius: 0.5rem;
+        padding: 0.25rem;
+        color: white;
+        margin-top: 20px;
+        width: 90px;
+        height: 25px;
+        border-color: #ddd;
+      }
+      
+      .btnS:hover {
+        box-shadow: 3px 5px 6px rgba(245, 222, 179, 0.7);
+        transition: 0.1s ease-in-out;
+        background-color: #62c7fe84;
+      }
+      
+      .invisible-text {
+        display: none;
+      }
+      
+      .icons {
+        background-color: #1b3a4b;
+        margin: 0 auto; /* Center the icons container */
+        display: inline-block;
+      }
+      
+      .icons a {
+        margin: 20px;
+        text-decoration: none;
+        font-size: 30px;
+        transition: 1s;
+      }
+      
+      .icons a:hover {
+        transform: scale(1.3);
+        z-index: 2;
+      }
+      
+      h3 {
+        color: #ddd;
+        font-size: 40px;
+      }
+      
+      p {
+        font-size: 20px;
+        margin-top: 0;
+      }
+      
+      #para {
+        font-size: 30px;
+      }
+      
+      /* Responsive Styles */
+      @media (max-width: 768px) {
+        .student {
+          width: 90%; /* Adjust width for tablets */
+          padding: 15px;
+          margin: 40px auto; /* Reduce vertical margins */
+        }
+      
+        h3 {
+          font-size: 32px; /* Adjust heading size */
+        }
+      
+        p {
+          font-size: 18px; /* Adjust paragraph size */
+        }
+      
+        #para {
+          font-size: 25px;
+        }
+      
+        .icons a {
+          font-size: 25px; /* Smaller icons on tablets */
+        }
+      }
+      
+      @media (max-width: 480px) {
+        .student {
+          width: 100%; /* Use full width for mobile devices */
+          padding: 10px;
+        }
+      
+        h3 {
+          font-size: 28px; /* Smaller heading for mobile */
+        }
+      
+        p {
+          font-size: 16px; /* Smaller paragraph font */
+        }
+      
+        #para {
+          font-size: 22px;
+        }
+      
+        .icons a {
+          font-size: 20px; /* Compact icon size for mobile */
+          margin: 10px; /* Reduce spacing */
+        }
+      
+        .btnS {
+          width: auto; /* Allow button to adjust size */
+          font-size: 14px; /* Smaller text for buttons */
+          height: auto;
+          padding: 5px 10px; /* Adjust padding */
+        }
+      }
+      
 
 /* footer {
   background-color: #1a1a1a;
