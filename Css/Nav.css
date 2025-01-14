@@ -1,15 +1,23 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+    transition: margin-top 0.3s ease;
   }
 
+  /* Navbar Styles */
   .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: white;
+    padding: 10px 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 20px;
-    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-    color: white;
+    z-index: 1000;
+    transition: height 0.3s ease;
   }
 
   .navbar-brand {
@@ -24,6 +32,8 @@ body {
     display: flex;
     margin: 0;
     padding: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
   }
 
   .navbar-nav li {
@@ -41,6 +51,7 @@ body {
     color: #ddd;
   }
 
+  /* Hamburger Menu */
   .hamburger {
     display: none;
     flex-direction: column;
@@ -54,6 +65,7 @@ body {
     margin: 4px 0;
   }
 
+  /* Responsive Navbar */
   @media (max-width: 768px) {
     .hamburger {
       display: flex;
@@ -61,20 +73,28 @@ body {
 
     .navbar-nav {
       flex-direction: column;
-      position: absolute;
-      top: 60px;
-      left: 0;
+      position: relative;
+      max-height: 0;
       width: 100%;
       background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-      display: none;
     }
 
     .navbar-nav.active {
-      display: flex;
+      max-height: 300px; /* Adjust based on menu items */
     }
 
     .navbar-nav li {
       margin: 10px 0;
       text-align: center;
     }
+  }
+
+  /* Page Content */
+  .content {
+    margin-top: 60px; /* Default height of the navbar */
+    transition: margin-top 0.3s ease;
+  }
+
+  .content.shifted {
+    margin-top: 360px; /* Navbar height when expanded + content margin */
   }

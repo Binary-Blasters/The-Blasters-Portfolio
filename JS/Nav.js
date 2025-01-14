@@ -1,13 +1,8 @@
 const hamburger = document.getElementById('hamburger');
     const navbarNav = document.getElementById('navbarNav');
+    const content = document.getElementById('content');
 
     hamburger.addEventListener('click', () => {
       navbarNav.classList.toggle('active');
-      removeNav();
+      content.classList.toggle('shifted');
     });
-
-    const removeNav=()=>{
-      setTimeout(() => {
-        navbarNav.classList.remove('active')
-      }, 1.5*1000);
-    }
