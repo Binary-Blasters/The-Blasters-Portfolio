@@ -11,3 +11,6 @@
   .navbar-custom .navbar-brand {
     color: white;
   }
+  .navbar-custom .navbar-toggler{
+    background-color: wheat;
+  }
