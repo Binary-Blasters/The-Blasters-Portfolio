@@ -1,6 +1,7 @@
 
-.navbar-custom {
+.navbar-custom  {
     background: #222;
+    position: sticky !important;
   }
   .navbar-custom .nav-link {
     color: white;
