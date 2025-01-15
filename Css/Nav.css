@@ -5,81 +5,89 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  background-color: #f4f4f9;
-  color: #333;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: #ffffff;
+  overflow-x: hidden;
 }
 
-.navbar {
+.containeR {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  background-color: #1e293b;
-  padding: 0.5rem 1.5rem;
-  color: white;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.navbaR {
   position: sticky;
   top: 0;
-  left: 0;
-  width: 100%;
   z-index: 1000;
+  background-color: #333;
+  color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
-.navbar .navbar-brand {
-  font-size: 1.5rem;
+
+.logo {
+  font-size: 24px;
   font-weight: bold;
-  color: #facc15;
+  color: #fff;
   text-decoration: none;
 }
 
-.nav-links {
+.nav-linkS {
   list-style: none;
   display: flex;
-  gap: 1.5rem;
-  transition: max-height 0.3s ease-out;
 }
 
-.nav-links li a {
+.nav-linkS li {
+  margin: 0 15px;
+}
+
+.nav-linkS a {
   text-decoration: none;
-  color: white;
-  font-weight: 500;
-  transition: color 0.3s ease;
+  color: #fff;
+  font-size: 16px;
+  transition: color 0.3s;
 }
 
-.nav-links li a:hover {
-  color: #facc15;
+.nav-linkS a:hover {
+  color: #ff9800;
 }
 
-.navbar-toggler {
+.hamburger {
   display: none;
-  font-size: 1.5rem;
+  font-size: 24px;
   background: none;
   border: none;
-  color: white;
+  color: #fff;
   cursor: pointer;
 }
+
 @media (max-width: 768px) {
-  .navbar-toggler {
-    display: block;
-  }
-
-  .nav-links {
-    display: block;
+  .nav-linkS {
+    display: none;
     flex-direction: column;
-    background-color: #1e293b;
-    overflow: hidden;
-    max-height: 0; /* Initially hidden */
+    background-color: #333;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 200px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   }
 
-  .nav-links.active {
-    max-height: 300px; /* Adjust to fit all links */
+  .nav-linkS.active {
+    display: flex;
   }
 
-  .nav-links li {
-    padding: 0.5rem 1rem;
+  .nav-linkS li {
     text-align: center;
+    width: 100%;
+    padding: 15px 0;
   }
-}
 
-.content {
-  padding: 1rem;
+  .hamburger {
+    display: block;
+  }
 }
