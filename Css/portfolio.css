@@ -105,7 +105,7 @@ body {
 .btn {
     margin-top: 20px;
     padding: 12px 25px;
-    background-color: #4caf50;
+    background-color: #4caf50 !important;
     color: white;
     text-decoration: none;
     border-radius: 5px;
